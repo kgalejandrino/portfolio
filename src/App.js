@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <Fragment>
-      <Header />
-      <Home />
+      <main>
+        <Header />
+        <Hero />
+      </main>
     </Fragment>
   );
 }

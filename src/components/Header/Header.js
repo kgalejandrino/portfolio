@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="row flex">
+      <div className={`${classes["header-row"]} flex`}>
         <div className={classes.logo}>Kevin Alejandrino</div>
         <Navigations />
         <span className={classes["menu-icon"]} onClick={toggleMenuHandler}>
