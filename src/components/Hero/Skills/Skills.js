@@ -1,33 +1,87 @@
+import useTooltip from "../../../hooks/use-tooltip";
 import classes from "./Skills.module.css";
 import html from "../../../assets/html.png";
 import css from "../../../assets/css.png";
 import javascript from "../../../assets/js.png";
 import react from "../../../assets/react.png";
 import python from "../../../assets/python.png";
+import Skill from "./Skill";
 
 const Skills = () => {
+  const {
+    isHovering: htmlIsHovered,
+    handleMouseOver: htmlMouseOver,
+    handleMouseOut: htmlMouseOut,
+  } = useTooltip();
+
+  const {
+    isHovering: cssIsHovered,
+    handleMouseOver: cssMouseOver,
+    handleMouseOut: cssMouseOut,
+  } = useTooltip();
+
+  const {
+    isHovering: jsIsHovered,
+    handleMouseOver: jsMouseOver,
+    handleMouseOut: jsMouseOut,
+  } = useTooltip();
+
+  const {
+    isHovering: reactIsHovered,
+    handleMouseOver: reactMouseOver,
+    handleMouseOut: reactMouseOut,
+  } = useTooltip();
+
+  const {
+    isHovering: pythonIsHovered,
+    handleMouseOver: pythonMouseOver,
+    handleMouseOut: pythonMouseOut,
+  } = useTooltip();
+
   return (
     <div className={classes.container}>
       <div className={classes.text}>Skills</div>
       <ul className={classes["tech-stack"]}>
-        <li className={classes["img-container"]}>
-          <img src={html} alt="html logo" />
-        </li>
-        <li className={classes["img-container"]}>
-          <img src={css} alt="css logo" />
-        </li>
-        <li className={classes["img-container"]}>
-          {/* <p className={classes.label}>Javascript</p> */}
-          <img src={javascript} alt="javascript logo" />
-        </li>
-        <li className={classes["img-container"]}>
-          {/* <p className={classes.label}>React</p> */}
-          <img src={react} alt="react logo" />
-        </li>
-        <li className={classes["img-container"]}>
-          {/* <p className={classes.label}>Python</p> */}
-          <img src={python} alt="python logo" />
-        </li>
+        <Skill
+          src={html}
+          alt="HTML logo"
+          text="HTML"
+          mouseOver={htmlMouseOver}
+          mouseOut={htmlMouseOut}
+          isHovered={htmlIsHovered}
+        />
+        <Skill
+          src={css}
+          alt="HTML logo"
+          text="CSS"
+          mouseOver={cssMouseOver}
+          mouseOut={cssMouseOut}
+          isHovered={cssIsHovered}
+        />
+        <Skill
+          src={javascript}
+          alt="HTML logo"
+          text="JavaScript"
+          mouseOver={jsMouseOver}
+          mouseOut={jsMouseOut}
+          isHovered={jsIsHovered}
+        />
+        <Skill
+          src={react}
+          alt="HTML logo"
+          text="React"
+          mouseOver={reactMouseOver}
+          mouseOut={reactMouseOut}
+          isHovered={reactIsHovered}
+        />
+        <Skill
+          src={python}
+          alt="HTML logo"
+          text="Python"
+          mouseOver={pythonMouseOver}
+          mouseOut={pythonMouseOut}
+          isHovered={pythonIsHovered}
+        />
       </ul>
     </div>
   );

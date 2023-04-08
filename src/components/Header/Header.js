@@ -17,9 +17,9 @@ const Header = () => {
         <Navigations />
         <span className={classes["menu-icon"]} onClick={toggleMenuHandler}>
           {toggleMenu ? (
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           ) : (
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           )}
         </span>
       </div>

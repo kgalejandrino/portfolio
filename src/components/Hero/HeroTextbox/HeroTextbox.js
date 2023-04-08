@@ -12,8 +12,8 @@ const HeroTextbox = () => {
         automation testing.
       </p>
       <div className={classes.socials}>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-square-github"></i>
+        <i className="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-square-github"></i>
       </div>
     </div>
   );

@@ -18,9 +18,9 @@ const Navigations = () => {
         <li className={classes.resume}>Resume</li>
         <span className={classes.mode} onClick={toggleColorMode}>
           {colorMode ? (
-            <i class="fa-regular fa-sun"></i>
+            <i className="fa-regular fa-sun"></i>
           ) : (
-            <i class="fa-regular fa-moon"></i>
+            <i className="fa-regular fa-moon"></i>
           )}
         </span>
       </ul>
