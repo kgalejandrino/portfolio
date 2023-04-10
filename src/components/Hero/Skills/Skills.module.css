@@ -1,22 +1,19 @@
 .container {
-    text-transform: uppercase;
-    width: 350px;
     position: relative;
+    text-transform: uppercase;
+    max-width: 350px;
+    width: 100%;
     border: 1px solid #86C232;
     box-shadow: 0 0 4px #86C232;
     border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text {
     position: absolute;
-    left: -40px;
+    left: -36px;
     top: 80px;
     background-color: #222629;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 12px 0;
     color: #fff;
 }
@@ -26,8 +23,19 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 280px;
-    margin: 24px 0;
+    padding: 12px;
 }
 
 .tech-stack img { width: 36px; }
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .container { max-width: 450px; }
+
+    .text { 
+        left: 0;
+        top: -28px;
+        padding: 0;
+        font-size: 1rem;
+    }
+}

@@ -4,7 +4,7 @@ import Skills from "./Skills/Skills";
 
 const Hero = () => {
   return (
-    <section className={`${classes["section-hero"]} row flex`}>
+    <section className={`${classes["section-hero"]} row`}>
       <HeroTextbox />
       <Skills />
     </section>
