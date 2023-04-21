@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.role {
+    margin: 16px 0;
+}
+
+.about-left, .about-right { width: 40%;}
+
+.about-right {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.about-right img {
+    cursor: pointer;
+    border-radius: 12px;
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.3s, opacity 0.3s ease-in;
+}
+
+.about-right img:hover {
+    transform: scale(1);
+    opacity: 1;
+}

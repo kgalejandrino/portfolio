@@ -16,6 +16,14 @@ header {
     left: 0;
     padding: 24px 0;
     width: 100%;
+    background-color: rgba(34, 38, 41, 0.9);
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .row {
@@ -35,3 +43,14 @@ li {
     list-style-type: none;
     cursor: pointer;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #86C232;
+}
+

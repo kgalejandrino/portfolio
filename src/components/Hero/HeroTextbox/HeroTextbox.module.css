@@ -1,16 +1,25 @@
-.textbox {
-    line-height: 32px;
-    max-width: 450px;
+.textbox { 
+    max-width: 480px; 
+    display: flex;
+    flex-direction: column;
 }
 
-.textbox p:last-of-type { color: #cecece; }
+.name { 
+    color: #86C232; 
+    font-size: 3.2rem;
+}
 
-.name { color: #86C232; }
+.description {
+    color: #cecece;
+    line-height: 32px;
+}
 
-.title {
+/* .textbox p:last-of-type { color: #cecece; } */
+
+/* .title {
     font-size: 3rem;
     line-height: 56px;
-}
+} */
 
 .socials { margin-top: 16px; }
 
