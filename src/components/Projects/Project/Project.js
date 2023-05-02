@@ -35,8 +35,6 @@ const Project = (props) => {
           </span>
         </div>
         <div className={classes.links}>
-          <span>Live Demo</span>
-          <p>|</p>
           <span>
             <a
               href="https://kgalejandrino.github.io/react-ecommerce-webapp/"
