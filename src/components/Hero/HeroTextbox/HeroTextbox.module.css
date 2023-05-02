@@ -1,25 +1,30 @@
 .textbox { 
-    max-width: 480px; 
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
+.textbox h1 { font-size: 3rem;}
+
 .name { 
-    color: #86C232; 
-    font-size: 3.2rem;
+    font-size: 3rem; 
+    position: relative;
+}
+
+.name::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    border: 1px solid #86C232;
 }
 
 .description {
     color: #cecece;
-    line-height: 28px;
+    margin-top: 24px;
 }
 
-/* .textbox p:last-of-type { color: #cecece; } */
-
-/* .title {
-    font-size: 3rem;
-    line-height: 56px;
-} */
 
 .socials { margin-top: 16px; }
 
@@ -36,15 +41,5 @@
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1024px) {
-    .textbox { margin-bottom: 120px; }
-}
-
-@media only screen and (max-width: 486px) {
-    .title { 
-        font-size: 2.4rem; 
-        line-height: 48px;
-    }
-}
 
 
