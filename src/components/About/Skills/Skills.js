@@ -40,7 +40,6 @@ const Skills = () => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.text}>Skills</div>
       <ul className={classes["tech-stack"]}>
         <Skill
           src={html}
